@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
 }
 
 .navbar {
@@ -19,9 +21,20 @@ nav {
   align-items: center;
   background-color: #47b5ff;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px;
   padding-left: 100px;
   padding-right: 100px;
+  position: sticky;
+  top: 0;
+}
+
+header {
+  display: inline;
+}
+
+nav .container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 nav img {
@@ -36,7 +49,7 @@ nav a {
   color: black;
 }
 
-div a:hover {
+.container a:hover {
   color: yellow;
   transition: 0.3s;
   border-radius: 5px;
@@ -60,6 +73,15 @@ main {
   padding: 100px;
 }
 
+h2 {
+  font-size: xx-large;
+}
+
+.sub-article {
+  font-size: large;
+  font-weight: bold;
+}
+
 a img {
   width: 100px;
 }
@@ -78,7 +100,10 @@ q {
 }
 
 #crew div,
-#wikia {
+#wikia,
+#kapal,
+#galeri,
+#team {
   text-align: center;
 }
 
@@ -87,7 +112,8 @@ q {
   width: 100%;
 }
 
-#bendera-mugiwara {
+#bendera-mugiwara,
+#galeri img {
   max-width: 200px;
   width: 100%;
 }
@@ -97,6 +123,90 @@ q {
   max-height: 500px;
   object-fit: cover;
   object-position: center;
+}
+
+.img-ships img,
+#team img {
+  max-width: 400px;
+  width: 100%;
+}
+
+section h3 {
+  margin-top: 30px;
+}
+
+/* kapal flex box */
+.flex-kapal {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.img-ships {
+  padding: 10px;
+}
+
+.img-ships:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+  background-color: black;
+}
+
+/*  galeri flex box */
+.flex-figure-column {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.flex-row-galeri {
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.box-galeri,
+.box-kapal {
+  flex-grow: 1;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.box-galeri:hover {
+  background-color: #47b5ff;
+  transition: 0.3s;
+  border: 2px solid black;
+}
+
+/* team flex */
+.flex-team {
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.box-team {
+  flex-grow: 1;
+  border: 5px solid black;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.flex-team figcaption {
+  margin-top: -13px;
+}
+
+.kalimat-mutiara {
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .card {
@@ -118,4 +228,77 @@ footer {
 
 footer img {
   width: 120px;
+}
+
+@media screen and (max-width: 1265px) {
+  .img-ships img {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .flex-kapal {
+    flex-direction: column;
+  }
+
+  .kalimat-mutiara {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  main {
+    margin-top: 30px;
+    padding: 30px;
+  }
+
+  nav li {
+    margin-right: 5px;
+  }
+
+  nav {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 671px) {
+  .flex-team {
+    flex-direction: column;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 623px) {
+  nav a {
+    font-size: 14px;
+  }
+
+  nav a {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  nav a {
+    font-size: 12px;
+  }
+
+  a img {
+    width: 70px;
+  }
+
+  nav .container {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .logo-nav {
+    display: none;
+  }
+
+  nav .container {
+    width: auto;
+  }
 }
