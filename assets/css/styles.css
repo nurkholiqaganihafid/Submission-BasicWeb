@@ -154,6 +154,60 @@ section h3 {
   background-color: black;
 }
 
+/* popup content kapal */
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content-merry,
+.popup .content-sunny {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: 280px;
+  z-index: 2;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content-merry,
+.popup.active .content-sunny {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /*  galeri flex box */
 .flex-figure-column {
   padding: 5px;
@@ -291,6 +345,12 @@ footer img {
   nav .container {
     margin-left: -30px;
   }
+
+  .popup .content-merry,
+  .popup .content-sunny {
+    width: 350px;
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 405px) {
@@ -300,5 +360,11 @@ footer img {
 
   nav .container {
     width: auto;
+  }
+
+  .popup .content-merry,
+  .popup .content-sunny {
+    width: 310px;
+    height: 320px;
   }
 }

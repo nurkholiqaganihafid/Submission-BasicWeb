@@ -326,7 +326,7 @@
           <h2>KAPAL</h2>
           <p class="sub-article">BAJAK LAUT TOPI JERAMI</p>
           <div class="flex-kapal">
-            <figure class="img-ships">
+            <figure class="img-ships" onclick="togglePopupMerry()">
               <img
                 src="assets/image/ships/going-merry.png"
                 alt="Going Merry"
@@ -336,7 +336,7 @@
               <figcaption>Going Merry</figcaption>
             </figure>
 
-            <figure class="img-ships">
+            <figure class="img-ships" onclick="togglePopupSunny()">
               <img
                 src="assets/image/ships/sunny-go.png"
                 alt="Thousand Sunny"
@@ -347,8 +347,10 @@
             </figure>
           </div>
 
-          <div class="popup">
-            <div class="close-btn">
+          <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content-merry">
+              <div class="close-btn" onclick="togglePopupMerry()">&times;</div>
               <h2>Going Merry</h2>
               <p>
                 Going Merry adalah kapal pertama dari kelompok Bajak Laut Topi
@@ -357,8 +359,12 @@
                 Lobby dan digantikan oleh Thousand Sunny.
               </p>
             </div>
+          </div>
 
-            <div class="close-btn">
+          <div class="popup" id="popup-2">
+            <div class="overlay"></div>
+            <div class="content-sunny">
+              <div class="close-btn" onclick="togglePopupSunny()">&times;</div>
               <h2>Thousand Sunny</h2>
               <p>
                 Thousand Sunny adalah kapal kedua dari Bajak Laut Topi Jerami,
@@ -519,5 +525,7 @@
       <img src="assets/image/logo-onpic.png" alt="ONPIC" />
       <div>Copyright &#169; 2022 | ONPIC</div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
