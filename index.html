@@ -11,26 +11,32 @@
   <body>
     <header class="navbar">
       <nav>
-        <a href="#onpic">ONPIC</a>
-        <ul>
-          <li><a href="#wikia">Wikia</a></li>
-          <li><a href="#crew">Crew</a></li>
-          <li><a href="#kapal">Kapal</a></li>
-          <li><a href="#galeri">Galeri</a></li>
-          <li><a href="#team">Team</a></li>
-        </ul>
+        <a href="#onpic"
+          ><img src="assets/image/logo-onpic.png" alt="ONPIC"
+        /></a>
+        <div>
+          <ul>
+            <li><a href="#wikia">WIKIA</a></li>
+            <li><a href="#crew">CREW</a></li>
+            <li><a href="#kapal">KAPAL</a></li>
+            <li><a href="#galeri">GALERI</a></li>
+            <li><a href="#team">TEAM</a></li>
+          </ul>
+        </div>
       </nav>
 
       <div id="onpic">
-        <h1>Welcome To ONPIC!</h1>
-        <p>Hi there</p>
+        <div class="hi-there">
+          <em>Hi There...</em>
+        </div>
+        <em><h1>Welcome To ONPIC!</h1></em>
       </div>
     </header>
 
     <main>
       <div id="content">
-        <article id="wikia">
-          <h2>Wikia</h2>
+        <article id="wikia" class="card">
+          <h2>WIKIA</h2>
           <img
             src="assets/image/logo-onepiece.png"
             alt="One Piece"
@@ -53,31 +59,34 @@
           </blockquote>
         </article>
 
-        <article id="crew">
-          <h2>Crew<br />Bajak Laut Topi Jerami</h2>
-          <img
-            src="assets/image/bendera-topi-jerami.png"
-            alt="Bendera Topi Jerami"
-            title="Bendera Topi Jerami"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
-            porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies,
-            purus lectus malesuada libero, sit amet commodo magna eros quis
-            urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et
-            orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
-            Suspendisse dui purus, scelerisque at, vulputate vitae, pretium
-            mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut
-            nonummy.
-          </p>
+        <article id="crew" class="card">
+          <div>
+            <h2>CREW<br />Bajak Laut Topi Jerami</h2>
+            <img
+              src="assets/image/bendera-topi-jerami.png"
+              alt="Bendera Topi Jerami"
+              id="bendera-mugiwara"
+              title="Bendera Topi Jerami"
+            />
+            <p>
+              Bajak Laut Topi Jerami, juga dikenal sebagai Kru Topi Jerami, atau
+              hanya Topi Jerami, adalah kru bajak laut yang terkenal dan kuat
+              yang berasal dari East Blue, tetapi memiliki berbagai anggota dari
+              berbagai daerah. Mereka adalah fokus utama dan protagonis dari
+              seri manga dan anime One Piece, dan dipimpin oleh protagonis
+              utama, Monkey D. Luffy. "Topi Jerami" diberi nama setelah topi
+              khas Luffy yang diberikan kepadanya oleh Shanks si Rambut Merah,
+              dan pertama kali disebut sebagai Bajak Laut Topi Jerami oleh
+              Smoker di Alabasta.
+            </p>
+          </div>
 
           <section>
             <h3>Monkey D. Luffy</h3>
             <img
               src="assets/image/luffy.jpg"
               alt="Monkey D. Luffy"
+              class="featured-image"
               title="Monkey D. Luffy"
             />
             <p>
@@ -100,6 +109,7 @@
             <img
               src="assets/image/zoro.jpg"
               alt="Roronoa Zoro"
+              class="featured-image"
               title="Roronoa Zoro"
             />
             <p>
@@ -114,7 +124,12 @@
 
           <section>
             <h3>Nami</h3>
-            <img src="assets/image/nami.jpg" alt="Nami" title="Nami" />
+            <img
+              src="assets/image/nami.jpg"
+              alt="Nami"
+              class="featured-image"
+              title="Nami"
+            />
             <p>
               Nami si "Kucing Pencuri" adalah seorang bajak laut dan navigator
               dari kelompok Bajak Laut Topi Jerami. Dia di besarkan di Desa
@@ -127,7 +142,12 @@
 
           <section>
             <h3>Usopp</h3>
-            <img src="assets/image/usopp.png" alt="Usopp" title="Usopp" />
+            <img
+              src="assets/image/usopp.png"
+              alt="Usopp"
+              class="featured-image"
+              title="Usopp"
+            />
             <p>
               Usopp adalah penembak jitu dari Bajak Laut Topi Jerami dan mantan
               Kapten dari Bajak Laut Usopp. Ia dilahirkan di Desa Syrup dan
@@ -140,7 +160,12 @@
 
           <section>
             <h3>Sanji</h3>
-            <img src="assets/image/sanji.jpg" alt="Sanji" title="Sanji" />
+            <img
+              src="assets/image/sanji.jpg"
+              alt="Sanji"
+              class="featured-image"
+              title="Sanji"
+            />
             <p>
               "Kaki Hitam" Sanji adalah seorang bajak laut merangkap koki dari
               kelompok Bajak Laut Topi Jerami. Ia merupakan anggota kelima yang
@@ -160,6 +185,7 @@
             <img
               src="assets/image/chopper.jpg"
               alt="Tony Tony Chopper"
+              class="featured-image"
               title="Tony Tony Chopper"
             />
             <p>
@@ -178,6 +204,7 @@
             <img
               src="assets/image/robin.jpg"
               alt="Nico Robin"
+              class="featured-image"
               title="Nico Robin"
             />
             <p>
@@ -192,7 +219,12 @@
 
           <section>
             <h3>Franky</h3>
-            <img src="assets/image/franky.jpg" alt="Franky" title="Franky" />
+            <img
+              src="assets/image/franky.jpg"
+              alt="Franky"
+              class="featured-image"
+              title="Franky"
+            />
             <p>
               "Cyborg" Franky adalah anggota kru Bajak Laut Topi Jerami yang
               bertugas sebagai mekanik kapal Thousand Sunny. Pertama kali muncul
@@ -207,7 +239,12 @@
 
           <section>
             <h3>Brook</h3>
-            <img src="assets/image/brook.jpg" alt="Brook" title="Brook" />
+            <img
+              src="assets/image/brook.jpg"
+              alt="Brook"
+              class="featured-image"
+              title="Brook"
+            />
             <p>
               Brook adalah seorang bajak laut dan musisi dari kelompok Bajak
               Laut Topi Jerami. Ia menjadi kru kesembilan yang bergabung setelah
@@ -221,7 +258,12 @@
 
           <section>
             <h3>Jinbe</h3>
-            <img src="assets/image/jinbe.jpg" alt="Jinbe" title="Jinbe" />
+            <img
+              src="assets/image/jinbe.jpg"
+              alt="Jinbe"
+              class="featured-image"
+              title="Jinbe"
+            />
             <p>
               Jinbe adalah seorang mermen spesies hiu paus, mantan Shichibukai
               dan kapten kedua kelompok Bajak Laut Matahari setelah Fisher
@@ -236,7 +278,7 @@
           </section>
         </article>
 
-        <article id="kapal">
+        <article id="kapal" class="card">
           <h2>Kapal</h2>
           <div>
             <figure>
@@ -282,7 +324,7 @@
           </div>
         </article>
 
-        <article id="galeri">
+        <article id="galeri" class="card">
           <h2>GALERI</h2>
           <figure>
             <img
@@ -308,10 +350,10 @@
       </div>
 
       <aside>
-        <article id="team">
+        <article id="team" class="card">
           <header>
             <h2>Team</h2>
-            <p>"We were born for a reason"</p>
+            <em><q>We were born for a reason</q></em>
           </header>
 
           <section>
@@ -335,16 +377,22 @@
               <figcaption>Lead Developer</figcaption>
             </figure>
 
-            <p>
-              "Bukan masalah Anda gagal. Tidak pula rugi jika impian belum jadi
-              kenyataan. Asalkan kita tidak berhenti dan terus berjalan,
-              berjuang, dan tetap berusaha. Maka, sukses menanti Anda di sana!".
-            </p>
+            <em
+              ><q
+                >Bukan masalah Anda gagal. Tidak pula rugi jika impian belum
+                jadi kenyataan. Asalkan kita tidak berhenti dan terus berjalan,
+                berjuang, dan tetap berusaha. Maka, sukses menanti Anda di
+                sana!</q
+              ></em
+            >
           </section>
         </article>
       </aside>
     </main>
 
-    <footer>Copyright &#169; 2022 | ONPIC</footer>
+    <footer>
+      <img src="assets/image/logo-onpic.png" alt="ONPIC" />
+      <div>Copyright &#169; 2022 | ONPIC</div>
+    </footer>
   </body>
 </html>
