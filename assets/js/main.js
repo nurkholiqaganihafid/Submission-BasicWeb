@@ -62,6 +62,10 @@ function togglePopupGaleri14() {
     document.getElementById('popup-galeri14').classList.toggle('active')
 }
 
+function privacyOnpic() {
+    confirm("Belum ada privacy policy")
+}
+
 // document.addEventListener('keydown', function (event) {
 //     if (event.key === "Escape") {
 //         document.getElementById("popup-1").classList.toggle("active");

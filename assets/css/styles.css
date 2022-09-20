@@ -324,6 +324,17 @@ section h3 {
   margin-top: 20px;
 }
 
+.privacy {
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.privacy:hover {
+  text-decoration: underline;
+}
+
 footer {
   background-color: #47b5ff;
   padding: 20px;
